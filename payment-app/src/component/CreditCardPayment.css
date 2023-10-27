@@ -1,0 +1,226 @@
+body{
+  background-color:white;
+}
+
+.Payment-page {
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+}
+
+.credit-card {
+  display: flex;
+  height: 300px;
+  margin-left: 200px;
+  margin-top: 30px;
+  font-family: Arial, sans-serif;
+  /*background-color: #f2f2f2;*/
+}
+
+.credit-card h1{
+  text-align: left;
+}
+
+.credit-card p{
+  text-align: left;
+}
+
+.credit-card__form {
+  background-color:white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  height: 500px;
+  text-align:left;
+}
+
+.credit-card-container {
+  background-color:hwb(0 98% 1%);
+  border: 1px solid hwb(0 94% 5%);
+  box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 30px;
+  padding: 20px;
+  width: 300px;
+  text-align:left;
+}
+
+.svg-container{
+  margin-left: 220px;
+  display: flex; 
+  gap: 10px;
+  align-items: center;
+}
+
+.icon-svg{
+  width: 37px; 
+  height: 37px;
+}
+
+.input-box {
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.input-box-exp{
+  width: 25px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex; 
+  gap: 10px;
+  align-items:center;
+}
+
+.input-box-cvv{
+  width: 130px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  align-items:center;
+}
+
+pre{
+  margin:auto;
+  margin-bottom: 20px;
+  color:#ccc ;
+  font-size: 14px;
+}
+
+.form-row{
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group col-md-7{
+  display:flex;
+  justify-content: space-between;
+}
+
+.personal-info{
+  display: flex;
+  justify-content:space-evenly;
+}
+
+.personal-info h1{
+  margin-top: 70px;
+  margin-left: auto;
+}
+
+.personal-group{
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+
+.personal-group-form{
+  text-align:center;
+}
+
+.personal-group-form label {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-container {
+  display: flex;
+  margin: 10px; 
+}
+
+.input-container input {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 20px;
+  flex: 1; 
+  margin-right: 10px;  
+}
+
+.input-box-1{
+  width:90%;
+  border: none;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 20px;
+  align-items:left;
+}
+
+.form-4{
+  display: flex;
+  margin: 10px;
+}
+
+.form-4 input{
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 20px;
+  flex: 1; 
+  margin-right: 10px;  
+}
+
+::placeholder{
+  color: #ccc;
+  font-size: 14px;
+}
+
+.form-2 select{
+  width: 94%;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  color: #ccc;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+button{
+  background-color: #007bff;
+  color: #fff;
+  width: 60%;
+  padding: 10px 20px;
+  margin-top: 50px;
+  margin-left: 75px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+
+
+
