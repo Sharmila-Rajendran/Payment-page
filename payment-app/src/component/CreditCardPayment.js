@@ -5,9 +5,11 @@ const CreditCardPayment = () => {
   const [formData, setFormData] = useState({
     cardNumber: '',
     cardHolder: '',
-    expiryDate: '',
+    expiryMonth: '',
+    expiryYear:'',
     cvv: '',
-    name: '',
+    fname: '',
+    lname:'',
     country: '',
     city: '',
     zipCode: '',
@@ -43,7 +45,7 @@ const CreditCardPayment = () => {
           <div className="form-group">
             <label htmlFor="cardNumber">Card Number</label>
             <input
-              type="number"
+              type="text"
               id="cardNumber"
               name="cardNumber"
               value={formData.cardNumber}
@@ -60,12 +62,12 @@ const CreditCardPayment = () => {
               <input
                 type="text"
                 id="expiryDate"
-                name="expiryDate"
-                value={formData.expiryDate}
+                name="expiryMonth"
+                value={formData.expiryMonth}
                 onChange={handleInputChange}
-                className="input-box-exp"
+                className="input-box-expmonth"
                 placeholder="MM"
-                maxLength="2"
+                maxLength={2}
                 required
               />
               </div>
@@ -75,17 +77,17 @@ const CreditCardPayment = () => {
               <input
                 type="text"
                 id="expiry"
-                name="expiry"
-                value={formData.expiryDate}
+                name="expiryYear"
+                value={formData.expiryYear}
                 onChange={handleInputChange}
-                className="input-box-exp"
+                className="input-box-expyear"
                 placeholder="YY"
-                maxLength="2"
+                maxLength={2}
                 required
               />
             </div>
             <div className="form-group col-md-7">
-              <label htmlFor="cvv">CVV Code</label>
+              <label className='cvv-label' htmlFor="cvv">CVV Code</label>
               <input
                 type="text"
                 id="cvv"
@@ -108,25 +110,31 @@ const CreditCardPayment = () => {
         <div className='personal-group-form'>
           <h1>Personal Details</h1><br></br><br></br>
           <form onSubmit={handleSubmit}>
+            <div className='name-row'>
             <div className="input-container">
               <input 
               type="text" 
-              id="name" 
+              id="fname" 
               name='fname'
-              value={formData.name}
+              value={formData.fname}
               onChange={handleInputChange}
+              className='input-name'
               placeholder="First Name"
               required
               />
+             </div>
+             <div className='input-container1'> 
               <input 
               type="text" 
               id="name" 
               name='lname'
-              value={formData.name}
+              value={formData.lname}
               onChange={handleInputChange}
               placeholder="Last Name"
+              className='input-name1'
               required
               />
+            </div>
             </div>
             <div className="form-2">
               <select>
